@@ -1,0 +1,37 @@
+@font-face {
+	font-family: 'open_sansbold';
+	src: url('opensans-bold-webfont.woff2') format('woff2'), url('opensans-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'open_sansregular';
+	src: url('opensans-regular-webfont.woff2') format('woff2'), url('opensans-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: 'open_sansregular', 'open__sansbold', Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	background-color: #f7f7f7;
+}
+
+main {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.column {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 900px;
+}

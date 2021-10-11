@@ -1,19 +1,45 @@
-@font-face {
+/* @font-face {
 	font-family: 'open_sansbold';
-	src: url('fonts/opensans-bold-webfont.woff2') format('woff2'), url('fonts/opensans-bold-webfont.woff') format('woff');
+	src: url('../fonts/opensans-bold-webfont.woff2') format('woff2'), url('../fonts/opensans-bold-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'open_sansregular';
-	src: url('fonts/opensans-regular-webfont.woff2') format('woff2'), url('fonts/opensans-regular-webfont.woff') format('woff');
+	src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'), url('../fonts/opensans-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+ */
+
+@font-face {
+	font-family: 'airbnb_cereal_appbook';
+	src: url('../fonts/airbnbcerealbook-webfont.woff2') format('woff2'), url('../fonts/airbnbcerealbook-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'airbnb_cereal_appmedium';
+	src: url('../fonts/airbnbcerealmedium-webfont.woff2') format('woff2'), url('../fonts/airbnbcerealmedium-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'airbnb_cereal_appbold';
+	src: url('../fonts/airbnbcerealbold-webfont.woff2') format('woff2'), url('../fonts/airbnbcerealbold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	background-color: #f0f0f0f0;
+}
+
 .stay_one {
-	font-family: 'open_sansregular', 'open__sansbold', Arial, Helvetica, sans-serif;
+	font-family: 'airbnb_cereal_appbook', Arial, Helvetica, sans-serif;
 	font-size: 1rem;
 	position: relative;
 	overflow: hidden;
@@ -21,10 +47,11 @@
 	min-width: 230px;
 	max-width: 315px;
 	width: 100%;
-	color: #141414;
+	color: #313131;
 	text-align: left;
 	line-height: 1.4rem;
 	font-size: 16px;
+	border-radius: 0.7rem;
 }
 
 .stay_one * {
@@ -64,12 +91,14 @@
 	margin: 0 0 10px;
 }
 
+/* Top */
 .stay_one h3 {
-	font-weight: 300;
-	font-size: 1.4em;
+	font-weight: 200;
+	font-size: 1.3em;
 	line-height: 1.2em;
-	font-family: 'Oswald', Arial, sans-serif;
+	font-family: 'airbnb_cereal_appbold', Arial, sans-serif;
 	text-transform: uppercase;
+	color: #222222;
 }
 
 .stay_one p {
@@ -90,4 +119,27 @@
 .stay_one:hover figcaption,
 .stay_one.hover figcaption {
 	top: 80px;
+}
+
+/* Buttons */
+.stay_one button {
+	border: none;
+	border-radius: 0.438rem;
+	padding: 7px 26px;
+}
+
+.reserve {
+	background-color: #eb4c60;
+	font-family: 'airbnb_cereal_appmedium', Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	color: white;
+	margin-right: 3px;
+}
+
+.show_more {
+	background-color: #ececec;
+	font-family: 'airbnb_cereal_appmedium', Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	color: #222222;
+	margin-right: 3px;
 }

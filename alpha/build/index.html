@@ -4,23 +4,56 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>IDM 241</title>
-		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/main.css" />
 	</head>
 
 	<body>
 		<main>
-			<figure class="stay_one">
-				<img src="images/stay_one.jpg" alt="stay one" width="315" />
-				<figcaption>
-					<h3>Luxury Rooftop Apt</h3>
-					<p>$236 / night · Upfront price</p>
+			<div class="container">
+				<div class="spacer"></div>
+				<div class="gradient"></div>
 
-					<button class="reserve">Reserve</button>
-					<button class="show_more">Show More</button>
-				</figcaption>
-				<a href="#"></a>
-			</figure>
+				<div class="caption">
+					<div class="title">LUXURY ROOFTOP APT</div>
+					<div class="subtitle">$236 / night · Upfront price</div>
+					<div class="button_container">
+						<button class="primary_button">Reserve</button>
+						<button class="secondary_button">Show More</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="description">
+				<div class="triggers">
+					<h3>Triggers:</h3>
+					<ul>
+						<li>To kick off the microinteraction, user will <b>hover</b> their mouse over the "stay" card.</li>
+					</ul>
+				</div>
+
+				<div class="rules">
+					<h3>Rules:</h3>
+					<ul>
+						<li>When card is hovered over, it slides up which adds more space and a white blurry top border, and moves the text box up.</li>
+						<li>When card is hovered over, it pulls up two new buttons.</li>
+					</ul>
+				</div>
+
+				<div class="feedback">
+					<h3>Feedback:</h3>
+					<ul>
+						<li>Same as the rules!</li>
+					</ul>
+				</div>
+
+				<div class="loops">
+					<h3>Loops &amp; Modes:</h3>
+					<ul>
+						<li>There are no loops or modes.</li>
+					</ul>
+				</div>
+			</div>
 		</main>
 	</body>
 </html>
